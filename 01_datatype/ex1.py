@@ -14,7 +14,7 @@ print(a, b)
 a = b = c = 0
 
 # 값 swap
-a, b = 2, 3
+a, b = 2, 3   #튜플 언패킹
 temp = a
 a = b
 b = temp

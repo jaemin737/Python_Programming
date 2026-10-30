@@ -22,5 +22,17 @@
 # print("[" + s.strip() + "]")
 
 
-a = input()
-print(a.isalnum() and (not(a.isalpha())) and (not (a.isdigit())) and len(a) >= 8)
+# a = input()
+# print(a.isalnum() and (not(a.isalpha())) and (not (a.isdigit())) and len(a) >= 8)
+
+sum = 1
+def fibo(a):
+	global sum
+	if a<=1:
+		return a
+	else:
+		sum +=2
+		return fibo(a-2) + fibo(a-1)
+a = int(input())
+b = fibo(a)
+print(sum)
